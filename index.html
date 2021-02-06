@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main-container ">
+    <!-- <form action="/" method="POST"> -->
+
+
+    <form>
+
+      <progress></progress>
+      <h2 id="blue"> How can we help You?</h2>
+
+    <div class="radio-buttons">
+
+        <label for="purch" class="custom-radio step step-1" onclick="process()">
+          <input type="text" id="purch" name="purch" checked>
+          <span class="radio-btn ">
+            <i class="fas fa-check green"></i>
+            <a href="prequal.html">
+              <div class="hobbies-icon nextBtn">
+                <i class="fas fa-home blue"></i>
+                <!-- <h3 name="fName" id="fName"><b>Home purchase</b></h3> -->
+                <h3 name="purch" id="purch"><b>Home purchase</b></h3>
+              </div>
+            </a>
+          </span>
+        </label>
+
+        <label for="refi" class="custom-radio step step-2">
+          <!-- <input type="radio" name="radio"> -->
+          <input type="text" name="refi" id="refi">
+          <span class="radio-btn">
+            <i class="fas fa-check green"></i>
+            <a href="cash_out.html">
+              <div class="hobbies-icon nextBtn">
+                <i class="fas fa-home blue"></i>
+                <!-- <h3 name="fName" id="fName"><b>Home Refinance</b></h3> -->
+                <h3 name="refi" id="refi"><b>Home Refinance</b></h3>
+              </div>
+            </a>
+          </span>
+        </label>
+
+        <label for="sale"  class="custom-radio step step-3">
+          <input type="text" id="sale" name="sale">
+          <span class="radio-btn">
+            <i class="fas fa-check green"></i>
+            <a href="purchase2.html">
+              <div class="hobbies-icon nextBtn">
+                <i class="fas fa-home blue"></i>
+                <!-- <h3 name="fName" id="fName" ><b>Home Sale</b></h3> -->
+                <h3 name="sale" id="sale"><b>Home Sale</b></h3>
+              </div>
+            </a>
+          </span>
+        </label>
+
+
+   </div>
+
+    </form>
+
+  </div>
+  <script src="script2.js"></script>
+</body>
+
+</html>

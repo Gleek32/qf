@@ -1,0 +1,251 @@
+ @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+ @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+body {
+  @include box(horizontal, start, stretch);
+  background: #e8ebee;
+  color: darken($option-color, 15%);
+  font-family: "Comic Neue", san-sarif;
+  text-align: center;
+
+  div {
+    padding: 5rem;
+  }
+
+  label {
+    display: block;
+    line-height: $option-size;
+  }
+}
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+   margin: 0;
+   padding: 0;
+   background-color: #a098b9;
+  }
+
+  .main-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .main-container h2 {
+    width: 50%;
+    margin: 0 0 30px 0;
+    color: white;
+    /* color: rgb(63, 165, 212); */
+    font-size: 25px;
+    text-align: center;
+    font-family: "helvetica", sans-serif;
+    font-weight: 400;
+  }
+
+  #blue  {
+
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-size: 25px;
+    text-align: center;
+     /* font-family: "Poppins", sans-serif;
+     font-weight: 400; */
+   }
+
+/* affects the h3 */
+.radio-btn .hobbies-icon h3 {
+  color:#a098b9;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+  .radio-buttons {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  }
+
+  .custom-radio input {
+   display: none;
+
+  }
+
+  .radio-btn {
+    margin: 5px;
+    width: 220px;
+    height: 180px;
+    /* #a098b9 */
+    border: 2px solid #a098b9;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+    background-color: white;
+  }
+
+  .green   {
+    color: #ffffff;
+    background-color: rgb(11, 141, 158);
+    font-size: 18px;
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translate(-50%) scale(4);
+    border-radius: 50px;
+    padding: 3px;
+    transition: 0.2s;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .radio-btn .hobbies-icon {
+    width: 180px;
+    height: 80px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+    /* controls the icons */
+  .radio-btn .blue {
+    /* align-items: center; */
+    margin-bottom: 1px;
+    margin-top: 10px;
+    color: rgb(11, 141, 158);
+
+    font-size: 50px;
+  }
+
+  .custom-radio  + .radio-btn {
+    border: 3px solid blue;
+
+  }
+      /* changes radio color when checked */
+  .custom-radio input:checked+.radio-btn {
+    border: 2px solid #a098b9;
+
+  }
+
+  .custom-radio input:checked + .radio-btn .green{
+    opacity: 1;
+    transform: translate(-50%);
+  }
+
+  .form {
+    background-color: #a098b9;
+    width: 500px;
+    color: white;
+    margin: auto;
+    /* border: 2px solid gold; */
+    padding: 20px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+  /* input[type=text][type=email] {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+
+  } */
+
+  input {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+
+  }
+
+  select  {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+  }
+
+  input[type=button] {
+    width: 20%;
+    padding: 5px;
+    font-size: 20px;
+    background-color:blue;
+    color: white;
+    border-radius: 10%;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+  .back {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(11, 141, 158);
+    color: white;
+    border-radius: 20%;
+  }
+
+  @media screen and (max-width: 750px){
+
+    .radio-btn .hobbies-icon  {
+      color: blue;
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+
+  .radio-btn {
+    height: 140px;
+    display: inline-block;
+    margin-bottom: 0px;
+
+  }
+
+  .radio-btn2 {
+    height: 170px;
+
+  }
+
+    .contact {
+    height: 400px;
+    width: 400px;
+    font-size: 20px;
+    padding-top: 50px;
+  }
+  .form {
+  width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+}

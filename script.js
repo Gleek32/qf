@@ -1,3 +1,9 @@
+const firstName = document.getElementById("fName");
+const lastName = document.getElementById("lName");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const form = document.getElementById("form");
+const error = document.getElementById("error");
 const slidePage = document.querySelector(".slidepage");
 const firtNextBtn = document.querySelector(".nextBtn");
 const prevBtnSec = document.querySelector(".prev-1");
@@ -73,23 +79,7 @@ prevBtnFourth.addEventListener("click", function() {
 $('form').on('submit', (e) => {
   e.preventDefault();
 
-  const loan = $('#loan').val().trim();
-  const refi = $('#refi').val().trim();
-  const purchase = $('#purchase').val().trim();
-  const cash = $('#cash').val().trim();
-
-  const single = $('#single').val().trim();
-  const multi = $('#multi').val().trim();
-  const condo = $('#condo').val().trim();
-  const town = $('#town').val().trim();
-
-
-  const primary = $('#primary').val().trim();
-  const second = $('#second').val().trim();
-  const invest = $('#invest').val().trim();
-
-
-
+  
   const firstName = $('#firstName').val().trim();
   const lastName = $('#lastName').val().trim();
   const email = $('#email').val().trim();
@@ -133,4 +123,15 @@ $('form').on('submit', (e) => {
         console.log('Server received data');
 });
 });
-© 2021 GitHub, Inc.
+form.addEventListener('submit', (e) => {
+  const messages = []
+  if (fName.value === '' || fName.value == null) {
+    messages.push('First Name Required')
+  }
+
+  if(messages.length > 0) {
+    e.preventDefault()
+    error.innerText = messages.join(', ')
+  }
+});
+
