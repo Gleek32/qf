@@ -11,63 +11,64 @@
 </head>
 
 <body>
+
+
   <div class="main-container ">
     <!-- <form action="/" method="POST"> -->
 
-
-    <form>
-
-      <progress></progress>
+    <form action="/" method="POST">
+      <!-- <progress></progress> -->
       <h2 id="blue"> How can we help You?</h2>
 
     <div class="radio-buttons">
+        <label for="purch" class="custom-radio step step-1" >
+          <input type="radio" id="purch" name="type" value="Home Purschase" onclick="func2();" checked>
 
-        <label for="purch" class="custom-radio step step-1" onclick="process()">
-          <input type="text" id="purch" name="purch" checked>
+
           <span class="radio-btn ">
+
             <i class="fas fa-check green"></i>
             <a href="prequal.html">
               <div class="hobbies-icon nextBtn">
                 <i class="fas fa-home blue"></i>
                 <!-- <h3 name="fName" id="fName"><b>Home purchase</b></h3> -->
-                <h3 name="purch" id="purch"><b>Home purchase</b></h3>
+                <h2 name="purch" id="blue" value="Home purchase" >Home purchase</h2>
               </div>
-            </a>
+              </a>
           </span>
+
         </label>
 
         <label for="refi" class="custom-radio step step-2">
           <!-- <input type="radio" name="radio"> -->
-          <input type="text" name="refi" id="refi">
+          <input type="radio" name="type" id="refi" value="Home Refinance" onclick="func2();">
           <span class="radio-btn">
             <i class="fas fa-check green"></i>
             <a href="cash_out.html">
               <div class="hobbies-icon nextBtn">
                 <i class="fas fa-home blue"></i>
                 <!-- <h3 name="fName" id="fName"><b>Home Refinance</b></h3> -->
-                <h3 name="refi" id="refi"><b>Home Refinance</b></h3>
+                <h2 
+                id="blue" name="refi" id="refi">Home Refinance</h2>
               </div>
             </a>
-          </span>
+           </span>
         </label>
 
         <label for="sale"  class="custom-radio step step-3">
-          <input type="text" id="sale" name="sale">
+          <input type="radio" id="sale" name="type" value="Home Sale" onclick="func2();">
           <span class="radio-btn">
             <i class="fas fa-check green"></i>
             <a href="purchase2.html">
               <div class="hobbies-icon nextBtn">
                 <i class="fas fa-home blue"></i>
                 <!-- <h3 name="fName" id="fName" ><b>Home Sale</b></h3> -->
-                <h3 name="sale" id="sale"><b>Home Sale</b></h3>
+                <h2 id="blue" 2name="sale" id="sale">Home Sale</h2>
               </div>
             </a>
           </span>
         </label>
-
-
    </div>
-
     </form>
 
   </div>
@@ -75,3 +76,8 @@
 </body>
 
 </html>
+
+<?php
+$connection = mysqli_connect("localhost","root","");
+$db = mysqli_select_db($connection, '');
+?>

@@ -6,16 +6,52 @@ const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const inputs = [];
+
+
   form.querySelectorAll('input').forEach(input=>{
-    const {name, value} = input;
-    inputs.push({name, value})
+  const {name, value} = input;
+  inputs.push({name, value})
   })
   console.log(inputs)
-})
+ })
 console.log(backBtn)
 console.log(steps)
 
 
+function func2() {
+  var type = document.getElementById("purch");
+  if(document.getElementById("purch").checked)
+  {
+    var val = document.getElementById("purch").value;
+    // alert(val);
+  }
+
+  else if(document.getElementById("refi").checked)
+  {
+    var val = document.getElementById("refi").value;
+    // alert(val);
+  }
+
+ else if(document.getElementById("sale").checked)
+  {
+    var val = document.getElementById("sale").value
+    // alert(val);
+  }
+  console.log(val);
+}
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   const labels = [];
+//
+//   form.querySelectorAll('label').forEach(label => {
+//     const {name, value} = label;
+//     labels.push({name, value})
+//   })
+//
+//   console.log(labels)
+// })
+//
+// console.log(steps)
 
 
 
